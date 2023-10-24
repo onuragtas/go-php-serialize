@@ -1,4 +1,4 @@
-package phpserialize
+package go_php_serialize
 
 import (
 	"bytes"
