@@ -1,4 +1,4 @@
-package phpserialize
+package go_php_serialize
 
 import (
 	"bytes"
@@ -20,7 +20,7 @@ func Decode(value string) (result interface{}, err error) {
 	return
 }
 
-//all integer is int64，float number is float64
+// all integer is int64，float number is float64
 func (decoder *PhpDecoder) DecodeValue() (value interface{}, err error) {
 	if token, _, err := decoder.source.ReadRune(); err == nil {
 		if token == 'N' {
